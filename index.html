@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>B-ECO Fuel Tabs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <meta name="description" content="B-ECO Fuel Tabs – yoqilg‘ini tejash, dvigatelni himoyalash va ekologiya uchun innovatsion yechim">
+  <meta name="keywords" content="B-ECO, Fuel Tabs, yoqilg'i tejash, eco fuel">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="logo">
+    <img src="beco.png" alt="B-ECO">
+    <span>B-ECO</span>
+  </div>
+
+  <nav>
+    <a href="#home" id="navHome"></a>
+    <a href="#about" id="navAbout"></a>
+    <a href="#faq" id="navFaq"></a>
+  </nav>
+
+  <div class="langs">
+    <button onclick="setLang('uz')">UZ</button>
+    <button onclick="setLang('kz')">KZ</button>
+    <button onclick="setLang('ru')">RU</button>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1 id="title"></h1>
+    <p id="subtitle"></p>
+
+    <div class="actions">
+      <a href="tel:+77752709238" class="btn call">📞 Call</a>
+      <a href="https://wa.me/77752709238" target="_blank" class="btn wa">💬 WhatsApp</a>
+      <a href="https://www.instagram.com/beco_team?igsh=NjVxZzNqbmNjazll" target="_blank" class="btn ig">📸 Instagram</a>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2 id="aboutTitle"></h2>
+  <p id="aboutText"></p>
+
+  <div class="cards">
+    <div class="card" id="card1"></div>
+    <div class="card" id="card2"></div>
+    <div class="card" id="card3"></div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <h2 id="faqTitle"></h2>
+
+  <div class="faq-item">
+    <button onclick="toggleFaq(1)" id="q1"></button>
+    <div class="faq-body" id="a1"></div>
+  </div>
+
+  <div class="faq-item">
+    <button onclick="toggleFaq(2)" id="q2"></button>
+    <div class="faq-body" id="a2"></div>
+  </div>
+
+  <div class="faq-item">
+    <button onclick="toggleFaq(3)" id="q3"></button>
+    <div class="faq-body" id="a3"></div>
+  </div>
+
+  <div class="faq-item">
+    <button onclick="toggleFaq(4)" id="q4"></button>
+    <div class="faq-body" id="a4"></div>
+  </div>
+</section>
+
+<footer>
+  © 2026 — <b>Bahrom Furkatov</b>, Основатель
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
