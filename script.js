@@ -73,20 +73,3 @@ function setLang(l) {
     if (el) el.innerText = text[l][k];
   }
 }
-
-function toggleFaq(n) {
-  const el = document.getElementById("a" + n);
-  el.style.display = el.style.display === "block" ? "none" : "block";
-}
-
-setLang("uz");
-function setLang(lang) {
-  document.querySelectorAll('.langs button')
-    .forEach(btn => btn.classList.remove('active'));
-
-  document
-    .querySelector(.langs button[onclick="setLang('${lang}')"])
-    .classList.add('active');
-
-  // shu yerda til matnlarini almashtirish qoladi
-}
