@@ -80,3 +80,10 @@ function toggleFaq(n) {
 }
 
 setLang("uz");
+function openFuel() {
+  document.getElementById("fuelModal").style.display = "flex";
+}
+
+function closeFuel() {
+  document.getElementById("fuelModal").style.display = "none";
+}
