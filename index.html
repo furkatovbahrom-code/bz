@@ -37,11 +37,12 @@
     <h1 id="title"></h1>
     <p id="subtitle"></p>
 
-    <div class="actions">
+   <div class="actions">
   <a href="tel:+77752709238" class="btn call">📞 Call</a>
   <a href="https://wa.me/77752709238" target="_blank" class="btn wa">💬 WhatsApp</a>
   <a href="https://www.instagram.com/beco_team?igsh=NjVxZzNqbmNjazll" target="_blank" class="btn ig">📸 Instagram</a>
   <button class="btn fuel-btn" onclick="openFuel()">🔥 Fuel Tabs</button>
+<a href="#" onclick="openFuelVideo()" class="btn video">🎥 Fuel Tabs Video</a>
 </div>
     </div>
   </div>
@@ -92,5 +93,13 @@
   <div class="modal-content">
     <span class="close" onclick="closeFuel()">&times;</span>
     <img src="photo_2025-12-31_17-16-05.jpg" alt="Fuel Tabs" class="fuel-img">
+  </div>
+</div>
+<div id="fuelVideoModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeFuelVideo()">&times;</span>
+    <video controls class="fuel-video">
+      <source src="fuel-video.mp4" type="video/mp4">
+    </video>
   </div>
 </div>
