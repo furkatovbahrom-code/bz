@@ -80,3 +80,13 @@ function toggleFaq(n) {
 }
 
 setLang("uz");
+function setLang(lang) {
+  document.querySelectorAll('.langs button')
+    .forEach(btn => btn.classList.remove('active'));
+
+  document
+    .querySelector(.langs button[onclick="setLang('${lang}')"])
+    .classList.add('active');
+
+  // shu yerda til matnlarini almashtirish qoladi
+}
