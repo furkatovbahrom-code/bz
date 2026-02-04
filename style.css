@@ -28,7 +28,10 @@ body {
 }
 
 .logo img {
-  width: 28px;
+  width: 28px;          /* logo kichkina */
+  height: 28px;
+  object-fit: contain;
+  display: block;
 }
 
 nav a {
