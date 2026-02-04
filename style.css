@@ -4,10 +4,9 @@
   box-sizing: border-box;
   font-family: system-ui, sans-serif;
 }
-
 body {
-  background: #0b0f14;
-  color: #fff;
+  background: #f4f7fb;   /* och kulrang */
+  color: #111;
 }
 
 .top {
@@ -55,13 +54,9 @@ nav a {
   height: 100vh;
   background: url("photo_2026-02-03_23-47-22.jpg") center/cover no-repeat;
 }
-
 .overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.65);
+  background: rgba(0, 0, 0, 0.45); /* oldin 0.65 edi */
 }
-
 .hero-content {
   position: relative;
   z-index: 1;
@@ -99,7 +94,8 @@ nav a {
 .ig { background: #c13584; color: #fff; }
 
 .about, .faq {
-  padding: 40px 20px;
+  background: #ffffff;
+  color: #111;
 }
 
 .cards {
@@ -109,9 +105,10 @@ nav a {
 }
 
 .card {
-  background: #111;
-  padding: 16px;
-  border-radius: 14px;
+  background: #f9fbff;
+  padding: 18px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
 }
 
 .faq-item {
@@ -119,25 +116,27 @@ nav a {
 }
 
 .faq-item button {
-  width: 100%;
-  background: #111;
-  color: #0f0;
+  background: #f1f5f9;
+  color: #0a7a3c;
   padding: 14px;
-  border-radius: 12px;
+  border-radius: 14px;
   border: none;
   text-align: left;
+  font-weight: 600;
 }
 
 .faq-body {
   display: none;
   padding: 14px;
-  background: #0b0f14;
-  border-left: 2px solid #0f0;
+  background: #ffffff;
+  border-left: 4px solid #2cff6a;
+  color: #111;
 }
 
 footer {
+  background: #f1f5f9;
+  color: #555;
   text-align: center;
-  padding: 20px;
+  padding: 24px;
   font-size: 13px;
-  opacity: 0.7;
 }
