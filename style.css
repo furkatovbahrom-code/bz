@@ -141,3 +141,10 @@ footer {
   font-size: 13px;
   opacity: 0.7;
 }
+header .logo img {
+  width: 28px !important;
+  height: 28px !important;
+  max-width: 28px !important;
+  max-height: 28px !important;
+  object-fit: contain;
+}
