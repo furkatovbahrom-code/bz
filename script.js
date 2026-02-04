@@ -73,3 +73,10 @@ function setLang(l) {
     if (el) el.innerText = text[l][k];
   }
 }
+
+function toggleFaq(n) {
+  const el = document.getElementById("a" + n);
+  el.style.display = el.style.display === "block" ? "none" : "block";
+}
+
+setLang("uz");
