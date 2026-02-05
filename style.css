@@ -176,3 +176,18 @@ footer {
   color: white;
   font-weight: bold;
 }
+<!-- 🎬 Fuel Tabs Video / Rasm -->
+<div id="videoModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeVideo()">&times;</span>
+
+    <!-- HOZIR RASM -->
+    <img src="my-photo.jpg" class="fuel-img" alt="My Photo">
+
+    <!-- KEYIN VIDEO QILMOQCHI BO‘LSANG:
+    <video controls width="100%">
+      <source src="video.mp4" type="video/mp4">
+    </video>
+    -->
+  </div>
+</div>
