@@ -226,3 +226,6 @@ footer {
     visibility: hidden;
   }
 }
+#intro h1 {
+  display: none;
+}
