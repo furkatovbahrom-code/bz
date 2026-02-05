@@ -102,3 +102,10 @@ function openVideo() {
 function closeVideo() {
   document.getElementById("videoModal").style.display = "none";
 }
+// Intro tugagach olib tashlash
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    const intro = document.getElementById("intro");
+    if (intro) intro.remove();
+  }, 2300);
+});
