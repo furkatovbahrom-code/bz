@@ -186,12 +186,12 @@ footer {
   align-items: center;
   justify-content: center;
   z-index: 9999;
-  animation: introHide 2.2s ease forwards;
+  animation: introHide 4.5s ease forwards;
 }
 
 .intro-content {
   text-align: center;
-  animation: logoZoom 1.5s ease forwards;
+  animation: logoZoom 2.8s ease forwards;
 }
 
 .intro-content img {
