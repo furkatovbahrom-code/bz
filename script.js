@@ -87,3 +87,18 @@ function openFuel() {
 function closeFuel() {
   document.getElementById("fuelModal").style.display = "none";
 }
+function openFuel() {
+  document.getElementById("fuelModal").style.display = "flex";
+}
+
+function closeFuel() {
+  document.getElementById("fuelModal").style.display = "none";
+}
+
+function openVideo() {
+  document.getElementById("videoModal").style.display = "flex";
+}
+
+function closeVideo() {
+  document.getElementById("videoModal").style.display = "none";
+}
