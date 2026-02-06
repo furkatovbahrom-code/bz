@@ -21,16 +21,6 @@ const text = {
     a3: "Bitta tabletkani bakga solish kifoya.",
     q4: "Natija qachon bilinadi?",
     a4: "Birinchi 1–2 bakdan keyin seziladi.",
-    q5: "Fuel Tabs bilan o‘z biznesimni boshlasam bo‘ladimi?",
-    a5: "Ha, bo‘ladi. Siz Fuel Tabs mahsulotini buyurtma qilib, uni sotish
-    orqali o‘z daromadingizni boshlashingiz mumkin. Biz mahsulot,
-    tajriba va maslahatlar bilan sizni qo‘llab-quvvatlaymiz."
-    q6: "Minimal buyurtma qancha?",
-    a6: "Minimal buyurtma miqdori haqida batafsil ma’lumot olish 
-    uchun biz bilan bog‘laning."
-    q7: "Hamkorlik shartlari qanday?",
-    a7: "Hamkorlik shartlari sodda va qulay. Batafsil ma’lumot uchun 
-    Call yoki WhatsApp orqali murojaat qilishingiz mumkin."
   },
   kz: {
     navHome: "Home",
