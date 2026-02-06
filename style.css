@@ -228,3 +228,9 @@ footer {
 }
 #intro h1 {
   display: none;
+
+.fuel,
+.video {
+  background: #fff !important;
+  color: #000 !important;
+}
