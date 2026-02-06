@@ -3,8 +3,8 @@ let currentLang = "uz";
 const text = {
   uz: {
     navHome: "Home",
-    navAbout: "Mahsulot",
-    navFaq: "Savollar",
+    navAbout: "Product",
+    navFaq: "Questions",
     title: "Yoqilg‘ini tejang, dvigatelni himoyalang",
     subtitle: "B-ECO Fuel Tabs — zamonaviy va ekologik yechim",
     aboutTitle: "B-ECO Fuel Tabs nima?",
@@ -23,9 +23,9 @@ const text = {
     a4: "Birinchi 1–2 bakdan keyin seziladi."
   },
   kz: {
-    navHome: "Басты",
-    navAbout: "Өнім",
-    navFaq: "Сұрақтар",
+    navHome: "Home",
+    navAbout: "Product",
+    navFaq: "Questions",
     title: "Отынды үнемдеңіз, қозғалтқышты қорғаңыз",
     subtitle: "B-ECO Fuel Tabs — экологиялық шешім",
     aboutTitle: "B-ECO Fuel Tabs деген не?",
@@ -44,9 +44,9 @@ const text = {
     a4: "1–2 бактан кейін."
   },
   ru: {
-    navHome: "Главная",
-    navAbout: "Продукт",
-    navFaq: "Вопросы",
+    navHome: "Home",
+    navAbout: "Product",
+    navFaq: "Questions",
     title: "Экономьте топливо, защищайте двигатель",
     subtitle: "B-ECO Fuel Tabs — инновационное решение",
     aboutTitle: "Что такое B-ECO Fuel Tabs?",
