@@ -21,10 +21,6 @@ const text = {
     a3: "Bitta tabletkani bakga solish kifoya.",
     q4: "Natija qachon bilinadi?",
     a4: "Birinchi 1–2 bakdan keyin seziladi.",
-    q5: "Fuel Tabs bilan o‘z biznesimni boshlasam bo‘ladimi?",
-    a5: "Ha, bo‘ladi. Siz Fuel Tabs mahsulotini buyurtma qilib, uni sotish 
-    orqali o‘z daromadingizni boshlashingiz mumkin. Biz mahsulot, 
-    tajriba va maslahatlar bilan sizni qo‘llab-quvvatlaymiz."
   },
   kz: {
     navHome: "Home",
@@ -46,10 +42,6 @@ const text = {
     a3: "Бакқа салу жеткілікті.",
     q4: "Қашан әсер береді?",
     a4: "1–2 бактан кейін."
-    q5: "Fuel Tabs арқылы өз бизнесімді бастауға бола ма?",
-    a5: "Иә, болады. Сіз Fuel Tabs өнімін тапсырыс беріп, оны сату 
-    арқылы өз табысыңызды бастай аласыз. Біз өнім, тәжірибе және 
-    кеңестер арқылы қолдау көрсетеміз."
   },
   ru: {
     navHome: "Home",
@@ -71,10 +63,6 @@ const text = {
     a3: "Добавить в бак.",
     q4: "Когда эффект?",
     a4: "После 1–2 заправок."
-    q5: "Можно ли начать свой бизнес с Fuel Tabs?",
-    a5: "Да, можно. Вы можете заказать продукцию Fuel Tabs и 
-    начать зарабатывать, продавая её. Мы предоставляем продукт, 
-    опыт и консультационную поддержку."
   }
 };
 
