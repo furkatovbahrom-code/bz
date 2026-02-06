@@ -109,3 +109,10 @@ window.addEventListener("load", () => {
     if (intro) intro.remove();
   }, 2300);
 });
+function playIntroAudio() {
+  const audio = document.getElementById("introAudio");
+  audio.play().catch(() => {});
+  
+  // intro yopiladi
+  document.getElementById("intro").style.display = "none";
+}
