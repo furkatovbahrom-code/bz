@@ -109,10 +109,15 @@ window.addEventListener("load", () => {
     if (intro) intro.remove();
   }, 2300);
 });
-function playIntroAudio() {
+
+function startIntro() {
   const audio = document.getElementById("introAudio");
   audio.play().catch(() => {});
-  
-  // intro yopiladi
-  document.getElementById("intro").style.display = "none";
+
+  const intro = document.getElementById("intro");
+  intro.style.opacity = "0";
+
+  setTimeout(() => {
+    intro.style.display = "none";
+  }, 800);
 }
