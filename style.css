@@ -234,3 +234,17 @@ footer {
   background: #fff !important;
   color: #000 !important;
 }
+.btn {
+  background: #fff;
+  color: #000;
+  border-radius: 14px;
+  padding: 14px;
+  font-weight: 600;
+  border: none;
+}
+
+.fuel-btn,
+.video-btn {
+  background: #fff;
+  color: #000;
+}
