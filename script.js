@@ -1,230 +1,111 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: system-ui, sans-serif;
-}
-body {
-  background: #f4f7fb;   /* och kulrang */
-  color: #111;
-}
+let currentLang = "uz";
 
-.top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 16px;
-  background: #000;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.logo img {
-  width: 28px;          /* logo kichkina */
-  height: 28px;
-  object-fit: contain;
-  display: block;
-}
-nav a {
-  margin: 0 10px;
-  color: #000;            /* QORA */
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.langs button {
-  margin-left: 5px;
-  background: transparent;
-  border: 1px solid #0f0;
-  color: #0f0;
-  padding: 4px 8px;
-  border-radius: 6px;
-}
-
-.hero {
-  position: relative;
-  height: 100vh;
-  background: url("photo_2026-02-03_23-47-22.jpg") center/cover no-repeat;
-}
-.overlay {
-  background: rgba(0, 0, 0, 0.45); /* oldin 0.65 edi */
-}
-.hero-content {
-  position: relative;
-  z-index: 1;
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 32px;
-  margin-bottom: 12px;
-}
-
-.hero p {
-  font-size: 16px;
-  opacity: 0.9;
-}
-
-.actions {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.btn {
-  padding: 14px;
-  border-radius: 12px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #000;
-}
-
-.call { background: #2cff6a; }
-.wa { background: #1fa855; }
-.ig { background: #c13584; color: #fff; }
-
-.about, .faq {
-  background: #ffffff;
-  color: #111;
-}
-
-.cards {
-  display: grid;
-  gap: 16px;
-  margin-top: 20px;
-}
-
-.card {
-  background: #f9fbff;
-  padding: 18px;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-}
-
-.faq-item {
-  margin-top: 12px;
-}
-
-.faq-item button {
-  background: #f1f5f9;
-  color: #0a7a3c;
-  padding: 14px;
-  border-radius: 14px;
-  border: none;
-  text-align: left;
-  font-weight: 600;
-}
-
-.faq-body {
-  display: none;
-  padding: 14px;
-  background: #ffffff;
-  border-left: 4px solid #2cff6a;
-  color: #111;
-}
-
-footer {
-  background: #f1f5f9;
-  color: #555;
-  text-align: center;
-  padding: 24px;
-  font-size: 13px;
-}
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  left: 0; top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.7);
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-content {
-  background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  text-align: center;
-  max-width: 90%;
-}
-
-.fuel-img {
-  width: 100%;
-  max-width: 300px;
-}
-
-.close {
-  font-size: 30px;
-  float: right;
-  cursor: pointer;
-}
-
-.fuel-btn {
-  background-color: #00aa00;
-  color: white;
-  font-weight: bold;
-}
-
-/* ===== INTRO ===== */
-#intro {
-  position: fixed;
-  inset: 0;
-  background: #0b0f14;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-  animation: introHide 4.5s ease forwards;
-}
-
-.intro-content {
-  text-align: center;
-  animation: logoZoom 2.8s ease forwards;
-}
-
-.intro-content img {
-  width: 240px;
-  margin-bottom: 24px;
-}
-
-.intro-content h1 {
-  font-size: 36px;
-  letter-spacing: 4px;
-  color: #2cff6a;
-}
-
-/* Logo chiqish animatsiyasi */
-@keyframes logoZoom {
-  from {
-    opacity: 0;
-    transform: scale(0.6);
+const text = {
+  uz: {
+    navHome: "Home",
+    navAbout: "Mahsulot",
+    navFaq: "Savollar",
+    title: "Yoqilg‘ini tejang, dvigatelni himoyalang",
+    subtitle: "B-ECO Fuel Tabs — zamonaviy va ekologik yechim",
+    aboutTitle: "B-ECO Fuel Tabs nima?",
+    aboutText: "B-ECO Fuel Tabs yoqilg‘i tizimini tozalaydi, sarfni kamaytiradi va dvigatel umrini uzaytiradi.",
+    card1: "⛽️ Yoqilg‘i sarfini 10–20% kamaytiradi",
+    card2: "🛠 Dvigatelni ichkaridan tozalaydi",
+    card3: "🌱 Ekologik zararli chiqindilarni kamaytiradi",
+    faqTitle: "Ko‘p beriladigan savollar",
+    q1: "Qanday ishlaydi?",
+    a1: "Fuel Tabs yoqilg‘i molekulalarini faollashtirib, yonishni samarali qiladi.",
+    q2: "Qanday mashinalarga mos?",
+    a2: "Barcha benzin va dizel dvigatellarga mos.",
+    q3: "Qanday qo‘llaniladi?",
+    a3: "Bitta tabletkani bakga solish kifoya.",
+    q4: "Natija qachon bilinadi?",
+    a4: "Birinchi 1–2 bakdan keyin seziladi."
+  },
+  kz: {
+    navHome: "Басты",
+    navAbout: "Өнім",
+    navFaq: "Сұрақтар",
+    title: "Отынды үнемдеңіз, қозғалтқышты қорғаңыз",
+    subtitle: "B-ECO Fuel Tabs — экологиялық шешім",
+    aboutTitle: "B-ECO Fuel Tabs деген не?",
+    aboutText: "Отын жүйесін тазартып, шығынды азайтады.",
+    card1: "⛽️ Отын шығынын азайтады",
+    card2: "🛠 Қозғалтқышты қорғайды",
+    card3: "🌱 Экологияға зиянды азайтады",
+    faqTitle: "Жиі қойылатын сұрақтар",
+    q1: "Қалай жұмыс істейді?",
+    a1: "Отын молекулаларын белсендіреді.",
+    q2: "Қандай көліктерге?",
+    a2: "Барлық бензин және дизельге.",
+    q3: "Қалай қолданады?",
+    a3: "Бакқа салу жеткілікті.",
+    q4: "Қашан әсер береді?",
+    a4: "1–2 бактан кейін."
+  },
+  ru: {
+    navHome: "Главная",
+    navAbout: "Продукт",
+    navFaq: "Вопросы",
+    title: "Экономьте топливо, защищайте двигатель",
+    subtitle: "B-ECO Fuel Tabs — инновационное решение",
+    aboutTitle: "Что такое B-ECO Fuel Tabs?",
+    aboutText: "Снижает расход топлива и продлевает срок службы двигателя.",
+    card1: "⛽️ Экономия топлива",
+    card2: "🛠 Очистка двигателя",
+    card3: "🌱 Экология",
+    faqTitle: "Частые вопросы",
+    q1: "Как работает?",
+    a1: "Улучшает процесс сгорания топлива.",
+    q2: "Для каких авто?",
+    a2: "Для всех бензиновых и дизельных.",
+    q3: "Как использовать?",
+    a3: "Добавить в бак.",
+    q4: "Когда эффект?",
+    a4: "После 1–2 заправок."
   }
-  to {
-    opacity: 1;
-    transform: scale(1);
+};
+
+function setLang(l) {
+  currentLang = l;
+  for (let k in text[l]) {
+    const el = document.getElementById(k);
+    if (el) el.innerText = text[l][k];
   }
 }
 
-/* Intro yoвЂqolishi */
-@keyframes introHide {
-  0% { opacity: 1; }
-  80% { opacity: 1; }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
+function toggleFaq(n) {
+  const el = document.getElementById("a" + n);
+  el.style.display = el.style.display === "block" ? "none" : "block";
 }
-#intro h1 {
-  display: none;
+
+setLang("uz");
+function openFuel() {
+  document.getElementById("fuelModal").style.display = "flex";
+}
+
+function closeFuel() {
+  document.getElementById("fuelModal").style.display = "none";
+}
+function openFuel() {
+  document.getElementById("fuelModal").style.display = "flex";
+}
+
+function closeFuel() {
+  document.getElementById("fuelModal").style.display = "none";
+}
+
+function openVideo() {
+  document.getElementById("videoModal").style.display = "flex";
+}
+
+function closeVideo() {
+  document.getElementById("videoModal").style.display = "none";
+}
+// Intro tugagach olib tashlash
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    const intro = document.getElementById("intro");
+    if (intro) intro.remove();
+  }, 2300);
+});
