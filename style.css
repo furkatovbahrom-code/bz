@@ -217,7 +217,7 @@ footer {
   }
 }
 
-/* Intro yo‘qolishi */
+/* Intro yoвЂqolishi */
 @keyframes introHide {
   0% { opacity: 1; }
   80% { opacity: 1; }
@@ -228,18 +228,3 @@ footer {
 }
 #intro h1 {
   display: none;
-}
-.faq-item {
-  margin-bottom: 12px;
-}
-
-.faq-item button {
-  width: 100%;
-  background: #111;
-  color: #fff;
-  padding: 12px;
-  border: none;
-  text-align: left;
-  cursor: pointer;
-  font-size: 16px;
-}
