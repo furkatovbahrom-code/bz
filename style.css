@@ -243,11 +243,3 @@ footer {
   cursor: pointer;
   font-size: 16px;
 }
-
-.faq-body {
-  display: none;          /* ENG MUHIM QATOR */
-  padding: 12px;
-  background: #222;
-  color: #ccc;
-  font-size: 14px;
-}
