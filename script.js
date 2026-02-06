@@ -78,11 +78,14 @@ const text = {
   }
 };
 
-function setLang(l) {
-  currentLang = l;
-  for (let k in text[l]) {
+let currentLang = "uz";
+
+function setLang(lang) {
+  currentLang = lang;
+
+  for (let k in text[lang]) {
     const el = document.getElementById(k);
-    if (el) el.innerText = text[l][k];
+    if (el) el.innerText = text[lang][k];
   }
 }
 
@@ -98,21 +101,6 @@ function openFuel() {
 
 function closeFuel() {
   document.getElementById("fuelModal").style.display = "none";
-}
-function openFuel() {
-  document.getElementById("fuelModal").style.display = "flex";
-}
-
-function closeFuel() {
-  document.getElementById("fuelModal").style.display = "none";
-}
-
-function openVideo() {
-  document.getElementById("videoModal").style.display = "flex";
-}
-
-function closeVideo() {
-  document.getElementById("videoModal").style.display = "none";
 }
 // Intro tugagach olib tashlash
 window.addEventListener("load", () => {
