@@ -229,3 +229,25 @@ footer {
 #intro h1 {
   display: none;
 }
+.faq-item {
+  margin-bottom: 12px;
+}
+
+.faq-item button {
+  width: 100%;
+  background: #111;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.faq-body {
+  display: none;          /* ENG MUHIM QATOR */
+  padding: 12px;
+  background: #222;
+  color: #ccc;
+  font-size: 14px;
+}
