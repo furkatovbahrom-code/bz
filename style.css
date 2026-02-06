@@ -89,9 +89,9 @@ nav a {
   color: #000;
 }
 
-.call { background: #2cff6a; }
-.wa { background: #1fa855; }
-.ig { background: #c13584; color: #fff; }
+.call { background: #fff; }
+.wa { background: #fff; }
+.ig { background: #fff; color: #000; }
 
 .about, .faq {
   background: #ffffff;
